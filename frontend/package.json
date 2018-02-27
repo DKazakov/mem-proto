@@ -1,0 +1,31 @@
+{
+  "name": "mem-demo",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "classnames": "^2.2.5",
+    "google-map-react": "^0.31.0",
+    "isomorphic-unfetch": "^2.0.0",
+    "next": "latest",
+    "react": "^16.0.0",
+    "react-dom": "^16.0.0"
+  },
+  "author": "KazakovDV2@it.mos.ru",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-plugin-css-modules-transform": "^1.2.1",
+    "babel-plugin-file-loader": "^1.0.0",
+    "babel-plugin-module-resolver": "^2.7.1",
+    "file-loader": "^1.1.6",
+    "image-webpack-loader": "^4.0.0",
+    "node-sass": "^4.7.2",
+    "postcss": "^5.2.16",
+    "postcss-cssnext": "^2.10.0",
+    "styled-jsx-plugin-sass": "^0.2.2"
+  }
+}

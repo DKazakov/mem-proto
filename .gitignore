@@ -1,0 +1,6 @@
+*.swo
+*.swp
+frontend/.next
+frontend/node_modules
+frontend/package-lock.json
+frontend/static/css/

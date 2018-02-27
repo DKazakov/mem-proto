@@ -1,0 +1,47 @@
+$animationDelay: .1s
+$defaultSize: 30px
+$hoverSize: 50px
+
+a
+  color: blue
+
+.point__text
+  display: inline-block
+  width: $defaultSize
+  height: $defaultSize
+  border-radius: $defaultSize/2
+  background: white
+  line-height: $defaultSize
+.point
+  width: $defaultSize
+  overflow: hidden
+  height: $defaultSize
+  border: ($hoverSize - $defaultSize)/2 solid rgba(255, 255, 0, 0.2)
+  background: transparent
+  border-radius: $hoverSize/2
+  text-align: center
+  cursor: pointer
+  &:hover
+    border-width: 0px
+    width: $hoverSize
+    height: $hoverSize
+    transition: border-width $animationDelay, width $animationDelay, height $animationDelay
+    .point__text
+      width: $hoverSize
+      height: $hoverSize
+      line-height: $hoverSize
+      transition: width $animationDelay, height $animationDelay, line-height $animationDelay
+
+.left
+  width: 100px
+  float: left
+.right
+  margin-left: 100px
+  height: 400px
+
+.link
+  text-decoration: none
+  &__active
+    font-weight: bold
+    text-decoration: none
+    color: black

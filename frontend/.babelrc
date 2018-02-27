@@ -1,0 +1,45 @@
+{
+    "presets": [
+        [
+            "next/babel",
+            {
+                "styled-jsx": {
+                    "plugins": [
+                        "styled-jsx-plugin-sass"
+                    ]
+                }
+            }
+        ]
+    ],
+    "plugins": [
+        [
+            "module-resolver",
+            {
+                "root": ["./"],
+                "alias": {
+                    "components": "./components",
+                    "layout": "./layout",
+                    "static": "./static"
+                }
+            }
+        ],
+        [
+            "file-loader",
+            {
+                "name": "[hash].[ext]",
+                "extensions": ["png", "jpg", "jpeg", "gif", "svg", "woff"],
+                "publicPath": "/static",
+                "outputPath": "/static",
+                "context": ""
+            }
+        ],
+        [
+            "css-modules-transform", {
+                "extensions": [".css", ".sass"],
+                "append": [ "postcss-cssnext" ],
+                "extractCss": "./static/css/bundle.css",
+                "preprocessCss": "./pre-processor.js"
+            }
+        ]
+    ]
+}
